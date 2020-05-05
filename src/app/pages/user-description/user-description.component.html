@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="aditional-info">Información Adicional: </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <img [src]="response.data.avatar" class="avatar">
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 background">
+            <div class="header"><span class="titles">Nombre: </span> {{response.data.first_name}} {{response.data.last_name}}</div>
+            <div class="header"><span class="titles">Email: </span> {{response.data.email}}</div>
+            <div class="header"><span class="titles">Info: </span>
+                Persona con nombre {{response.data.first_name}} {{response.data.last_name}} y correo: {{response.data.email}} 
+                que no tiene mas Información.
+            </div>
+        </div>
+    </div>
+</div>
